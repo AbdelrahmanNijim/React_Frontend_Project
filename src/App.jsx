@@ -2,31 +2,42 @@ import { useState } from "react";
 import "./App.css";
 import Root from "./routes/Root";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Categories from "./Compo/Categories/Categories";
+import Categories from "./Pages/Categories/Categories";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/SignUp/Signup";
 import Products from "./Pages/Products/Products";
 import Cart from "./Pages/Cart/Cart";
 import NotFound from "./Pages/NotFound/NotFound";
+import Home from "./Pages/Home/Home";
 import axios from "axios";
 import { useEffect } from "react";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ProtectedRoutes from "./Compo/Auth/ProtectedRoutes/ProtectedRoutes";
+import ProtectedRoutesLoggedin from "./Compo/Auth/ProtectedRoutes/ProtectedRoutesLoggedin";
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Root  />,
 
     children: [
       {
 
         path: '/',
-        element: <Categories />,
+        element: <Home />,
 
 
       },
       {
         path: '/login',
-        element: <Login />
-
+        element: 
+        <ProtectedRoutesLoggedin>
+         <Login />
+        </ProtectedRoutesLoggedin>
+        
 
       },
       {
@@ -36,14 +47,23 @@ const router = createBrowserRouter([
 
       },
       {
-        path: '/products',
-        element: <Products />
+        path: '/products/:id',
+        element:
+      
+          <Products />
+      
+        
+        
 
 
       },
       {
         path: '/cart',
-        element: <Cart />
+       
+        element:
+        <ProtectedRoutes>
+            <Cart />
+        </ProtectedRoutes>
 
       },
       {
@@ -70,6 +90,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <ToastContainer />
     </>
   );
 }

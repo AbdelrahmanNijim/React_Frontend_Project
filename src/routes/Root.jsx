@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../Compo/Navbar/Navbar'
-import Categories from '../Compo/Categories/Categories'
+import Categories from '../Pages/Categories/Categories'
 import { Outlet } from 'react-router-dom'
 
-function Root() {
+function Root({userName}) {
   return (
     <>
-    <Navbar />
+    <Navbar userName={userName}/>
     <Outlet />
       
     </>

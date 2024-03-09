@@ -5,13 +5,22 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useParams } from 'react-router-dom'
+import Products from '../../Pages/Products/Products';
+import axios from 'axios';
 function Slider({products}) {
   
-  
-  
+ const {id} = useParams();
+  const handleSlideClick = {
+    
+    
+
+
+
+  };
   return (
     <>
-      <Swiper
+       <Swiper
 
     modules={[Navigation, Pagination, Scrollbar, A11y]}
     spaceBetween={50}
@@ -25,14 +34,16 @@ function Slider({products}) {
     >
         {products.map(product=>
       
-      <SwiperSlide key={product.id} >
-        <img src={product.secure_url} alt={product.name}/>
-        
-
+    <SwiperSlide key={product._id} >
+       
+       
+            <div onClick={handleSlideClick}>
+              <img src={product.image.secure_url} alt={product.name} />
+            </div>
       </SwiperSlide>
     
        
-      )}
+      )} 
       
       
 
