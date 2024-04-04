@@ -5,23 +5,30 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Categories from "./Pages/Categories/Categories";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/SignUp/Signup";
+import SendCode from "./Pages/ForgotPassword/SendCode";
+import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
 import Products from "./Pages/Products/Products";
+import SpecificProduct from "./Pages/Products/SpecificProduct";
 import Cart from "./Pages/Cart/Cart";
 import NotFound from "./Pages/NotFound/NotFound";
 import Home from "./Pages/Home/Home";
+import Order from "./Pages/Order/Order";
+import CategoriesProducts from "./Pages/Categories/CategoriesProducts"
 import axios from "axios";
 import { useEffect } from "react";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ProtectedRoutes from "./Compo/Auth/ProtectedRoutes/ProtectedRoutes";
 import ProtectedRoutesLoggedin from "./Compo/Auth/ProtectedRoutes/ProtectedRoutesLoggedin";
+import Profile from "./Pages/Profile/Profile";
+
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root  />,
+    element: <Root />,
 
     children: [
       {
@@ -33,11 +40,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: 
-        <ProtectedRoutesLoggedin>
-         <Login />
-        </ProtectedRoutesLoggedin>
-        
+        element:
+          <ProtectedRoutesLoggedin>
+            <Login />
+          </ProtectedRoutesLoggedin>
+
 
       },
       {
@@ -47,28 +54,70 @@ const router = createBrowserRouter([
 
       },
       {
+        path: '/SendCode',
+        element: <SendCode />
+
+
+      },
+      {
+        path: '/ForgotPassword',
+        element: <ForgotPassword />
+
+
+      },
+      {
+        path: '/profile',
+
+        element:
+         
+            <Profile />
+   
+
+      },
+     
+      {
         path: '/products/:id',
         element:
-      
+
+          <SpecificProduct />
+
+
+
+
+
+      },
+      {
+        path: '/products',
+        element:
+
           <Products />
-      
-        
-        
+
+
+
 
 
       },
       {
         path: '/cart',
-       
+
         element:
-        <ProtectedRoutes>
+          <ProtectedRoutes>
             <Cart />
-        </ProtectedRoutes>
+          </ProtectedRoutes>
 
       },
       {
-        path: "/categories",
-        element: <Categories />
+        path: "/category/:id",
+        element: <CategoriesProducts />
+      },
+      {
+        path: '/order',
+
+        element:
+         
+            <Order />
+   
+
       },
 
       {

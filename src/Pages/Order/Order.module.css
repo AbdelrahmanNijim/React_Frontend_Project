@@ -1,0 +1,91 @@
+
+.OrdersDetails {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px 20px;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.DetailsStart {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px 20px;
+  width: calc((100% - 40px) / 2);
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 1.5px 2px 1.5px 1.5px rgba(2, 65, 90, 0.199);
+  position: relative;
+}
+.vl {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.DetailsStart h2 {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+.DetailsStart img {
+  display: flex;
+  width: 20%;
+ 
+}
+
+
+.Cancel {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 12px;
+  background-color: rgba(240, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.082);
+  cursor: pointer;
+  padding: 6px 6px;
+  border-radius: 10px;
+  color: red;
+  box-shadow: 1.5px 2px 1.5px 1.5px rgba(175, 72, 209, 0.415);
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
+.Cancel a {
+  font-size: 16px;
+}
+
+.Cancel:hover {
+  animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateY(-2px);
+  }
+
+  60% {
+    transform: translateX(2px);
+  }
+
+
+}

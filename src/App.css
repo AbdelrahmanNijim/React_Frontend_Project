@@ -1,0 +1,34 @@
+body {
+  background-color: #f1f1f3b3;
+  font-family: "Be Vietnam Pro", sans-serif;
+  position: relative;
+}
+.container {
+
+  width: calc(100% - 120px);
+  margin: auto;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    bottom:50% ;
+    left:50% ;
+  }
+
+  .Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+.hidden{
+  display: none;
+}
+.space{
+  height: 250px;
+}

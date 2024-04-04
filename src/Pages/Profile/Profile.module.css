@@ -1,0 +1,97 @@
+.Profile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 40px;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ProfileCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 30px;
+    gap: 5px;
+    box-shadow: 1.5px 2px 7px 1.5px rgba(59, 155, 155, 0.442);
+    background-color: white;
+}
+
+.ProfileHead {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - 40px) / 2);
+    padding: 20px 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.ProfileHead img {
+    display: flex;
+    width: 30%;
+    border-radius: 100%;
+    border: 3px solid rgb(0, 32, 192);
+    box-shadow: 0px 0px 8px 0px rgba(1, 141, 255, 0.837);
+
+}
+
+.ProfileHead h2 {
+    font-size: medium;
+    background-color: white;
+    padding: 7px 10px;
+
+}
+
+.ProfileDetails {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - 80px) / 2);
+    padding: 30px 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px 0px rgba(59, 155, 155, 0.492);
+}
+
+.Details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+.Details2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(216, 231, 245);
+
+}
+
+.small {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.smallS {
+    font-size: 15px;
+    font-weight: 600;
+}

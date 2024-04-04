@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import { object, string } from 'yup';
 import { Bounce, Slide, toast } from 'react-toastify';
 import { Puff } from 'react-loader-spinner'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate ,NavLink} from 'react-router-dom';
+import styles from './Login.module.css'
 function Login() {
   const navigate = useNavigate();
   const [user, setUser] = useState({
@@ -64,7 +65,6 @@ function Login() {
 
         });
 
-        localStorage.setItem('userToken', data.token);
 
         if (data.message == 'success') {
           toast.success('Wolcome', {
@@ -78,7 +78,8 @@ function Login() {
             theme: "light",
             transition: Bounce,
           });
-
+           
+        localStorage.setItem('userToken', data.token);
           navigate('/');
         }
 
@@ -107,43 +108,53 @@ function Login() {
   }
 
 
+
+
+
+
   return (
     <>
-      <h2>LOGIN</h2>
-      <br />
-
-      {errors.length > 0 ? errors.map(error =>
-        <div> {error}</div>
-      ) : ''}
-
-
-      <form onSubmit={handelSubmit}>
-
-        <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value={user.email} name='email' onChange={handelChange} />
-          <br />
-
-          <label htmlFor="exampleInputPassword1">Password</label>
-          <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" value={user.password} name='password' onChange={handelChange} />
-          <br />
-
-        </div>
+      <div className='container'>
+        <br />
+        <br />
+        <h2>LOGIN</h2>
         <br />
 
-        <button type="submit" className="btn btn-primary"
-          disabled={loader ? 'disabled' : null}
-        >{!loader ? 'Login' : <Puff
-          visible={true}
-          height="40"
-          width="40"
-          color="#eee"
-          ariaLabel="puff-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-        />}</button>
-      </form>
+        {errors.length > 0 ? errors.map(error =>
+          <div> {error}</div>
+        ) : ''}
 
+
+        <form onSubmit={handelSubmit}>
+
+          <div className="form-group">
+            <label htmlFor="exampleInputEmail1">Email address</label>
+            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value={user.email} name='email' onChange={handelChange} />
+            <br />
+
+            <label htmlFor="exampleInputPassword1">Password</label>
+            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" value={user.password} name='password' onChange={handelChange} />
+            <br />
+
+          </div>
+          <br />
+
+          <NavLink className={styles.p}  to='/SendCode' >Forgot the Password ?</NavLink>
+          <br />
+          <br />
+          <button type="submit" className="btn btn-primary"
+            disabled={loader ? 'disabled' : null}
+          >{!loader ? 'Login' : <Puff
+            visible={true}
+            height="40"
+            width="40"
+            color="#eee"
+            ariaLabel="puff-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+          />}</button>
+        </form>
+      </div>
 
     </>
 
