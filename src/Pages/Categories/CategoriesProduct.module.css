@@ -17,24 +17,42 @@
     justify-content: center;
     gap: 20px;
     padding: 20px 20px;
-    width: 60%;
-}
-.CardS img{
-    display: flex;
     width: 100%;
-    aspect-ratio: 20/32;
-    
 }
+
+
 .cardStart{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    justify-content: center;
     box-shadow: 1.5px 2px 8px 1.5px rgba(72, 143, 209, 0.415);
     gap: 40px;
+    width: 100%;
+}
+.Image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: calc(( 100% - 80px) / 2 );
 }
+.Rate{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cardStart img{
+    display: flex;
+    width: 100%;
+    
+}
+
 .Cardend
 {
     display: flex;
@@ -57,13 +75,71 @@
     height: 440px;
     overflow:hidden;
 }
-.details h6{
+.details h5{
     font-size: 15px;
     font-weight: 400;
+    justify-content: space-between;
     font-family:Arial, Helvetica, sans-serif;
 }
-.details h6:first-child{
+.details h2:first-child{
     font-size: 18px;
     font-weight: 600;
     font-family:Arial, Helvetica, sans-serif;
 }
+.BTN {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    width: 70%;
+    padding: 20px;
+    background-color: blue;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  .BTN:hover{
+    
+    background-color: rgb(12, 3, 141);
+    transition: all 0.3s ease; 
+  }
+  
+  .AddtoCar {
+    color: azure;
+    font-size: larger;
+    text-decoration: none;
+  }
+/* For screens with a minimum width of 320px */
+@media only screen and (min-width: 320px) {
+    .Products {
+      padding: 10px;
+      justify-content: flex-start;
+    }
+  
+    .CardS {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .cardStart,
+    .Cardend {
+      width: calc((100% - 40px) / 2);
+      padding: 20px;
+    }
+  
+    .details {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .details h6 {
+      font-size: 12px;
+    }
+  
+    .details h6:first-child {
+      font-size: 15px;
+    }
+  }
+  

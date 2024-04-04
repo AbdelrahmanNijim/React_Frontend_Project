@@ -14,330 +14,17 @@
 
 
 
-.colored-word {
-  color: #ff9500;
-}
-
-.small-word {
-  text-transform: lowercase;
-}
-
-.big-word {
-  text-transform: uppercase;
-}
 
 .space {
   width: 60px;
 }
 
-header {
-  background-color: #f1f1f377;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  padding: 20px 24px;
-  z-index: 50;
-  box-shadow: 0px 1.64744px 8.2372px 0px #0000001a;
-}
 
 .Row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo img {
-  width: 54px;
-  height: 54px;
-}
-
-.LogNav-Row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 50px;
-}
-
-.LogNav-Row .Nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 26px;
-  list-style: none;
-}
-
-.LogNav-Row .Nav ul il a {
-  color: #262626;
-}
-
-.home-button {
-  background-color: #e5e5e65e;
-  padding: 14px 24px;
-  border-radius: 10px;
-}
-
-.header-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 30px;
-}
-
-
-.header-buttons .signup {
-  background-color: transparent;
-  color: #262626;
-}
-
-.header-buttons .login {
-  background-color: #ff9500;
-  padding: 12px 24px;
-  border-radius: 10px;
-  color: #ffffff;
-}
-
-.bar-menu {
-  cursor: pointer;
-  z-index: 990;
-  display: none;
-}
-
-.bar-menu svg {
-  width: 30px;
-  height: 30px;
-}
-
-/*hero*/
-
-.hero-row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 100px;
-  gap: 20px;
-}
-
-.hero-start {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  padding: 30px 30px;
-  gap: 20px;
-}
-
-.hero-dis {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #fcfcfd;
-  gap: 10px;
-  padding: 14px 30px;
-}
-
-.hero-start svg {
-  width: 39px;
-  height: 43px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.hero-dis img {
-  width: 47px;
-}
-
-.hero-dis h1 {
-  text-transform: capitalize;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.end {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.hero-H {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.hero-H h2 {
-  font-size: 28px;
-  text-transform: capitalize;
-  font-weight: 500;
-}
-
-.hero-H p {
-  font-size: 16px;
-  text-transform: capitalize;
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-
-.hero-buttons .explore-button {
-  color: #ffffff;
-  background-color: #ff9500;
-  border-radius: 10px;
-  padding: 18px 24px;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.hero-buttons .view-button {
-  color: #262626;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 18px 24px;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-/*media cards */
-
-.media {
-  padding-left: 81px;
-  padding-right: 81px;
-}
-
-.media-cards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 24px 24px;
-
-  background-color: #FCFCFD;
-
-}
-
-.media-cards .media-card {
-
-  padding: 20px 30px;
-
-}
-
-.Vertical-line {
-
-  border-left: 1px solid rgba(177, 177, 177, 0.279);
-  height: 55px;
-}
-
-.image {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-}
-
-.image img {
-  width: 93%;
-}
-
-.image svg {
-  position: absolute;
-  z-index: 10;
-}
-
-
-/*benefits */
-
-.benefits {
-  padding: 70px 81px;
-  width: 100%;
-
-}
-
-.titel-row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.titel-row .start-titel {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 20px;
-  width: calc((100% - 20px) / 2);
-
-}
-
-.start-titel h2 {
-  text-transform: capitalize;
-  color: #262626;
-  font-size: 48px;
-  font-weight: 600;
-
-}
-
-.start-titel p {
-  text-transform: capitalize;
-  color: #59595A;
-  font-size: 18px;
-
-}
-
-.titel-row .title-end {
-  align-self: flex-end;
-  background-color: #FCFCFD;
-  padding: 18px 24px;
-  border-radius: 10px;
-}
-
-.title-end a {
-  color: #262626;
-  text-transform: capitalize;
-  font-size: 18px;
-
-}
-
-.benefits-cards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  padding: 80px 0px;
-  gap: 20px;
-
-
-}
-
-.benefits-cards .benefits-card {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc((100% - 40px) / 3);
-  justify-content: right;
-  background-color: #FFFFFF;
-  padding: 40px 40px;
-  border-radius: 10px;
-  box-shadow: 1px 2.6px 2.5px 1px rgba(0, 0, 0, 0.215);
-
-
 }
 
 .benefits-card h2 {
@@ -375,7 +62,7 @@ header {
 
 }
 
-/* Courses*/
+
 
 
 .Courses {
@@ -458,13 +145,7 @@ header {
 
 }
 
-.bywho span {
-  text-transform: capitalize;
-  font-size: 20px;
-  font-weight: 600;
-  color: #262626;
 
-}
 
 .carddescription {
   display: flex;
@@ -589,11 +270,14 @@ header {
 .Comment {
   cursor: pointer;
   gap: 4px;
-}.Comment:hover {
+}
+
+.Comment:hover {
   transition: 0.8s;
   transform: scale(1.3);
   background-color: transparent;
 }
+
 .avgRating:hover {
   transition: 0.8s;
   transform: scale(1.3);
@@ -646,7 +330,9 @@ header {
   text-align: center;
   color: #130909b5;
 
-}.price:hover {
+}
+
+.price:hover {
   transition: 0.8s;
   transform: scale(1.3);
   background-color: transparent;
@@ -731,7 +417,7 @@ header {
 }
 
 
-.Form{
+.Form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -742,787 +428,126 @@ header {
 }
 
 
-.midForm{
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-gap: 30px;
-width:40%;
-justify-content: center;
-align-self: flex-end;
-box-shadow: 3px 2px 5px 3px rgba(14, 111, 221, 0.415);
-background-color: #ffffff;
-padding: 40px ;
+.midForm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+  justify-content: center;
+  align-self: flex-end;
+  box-shadow: 3px 2px 5px 3px rgba(14, 111, 221, 0.415);
+  background-color: #ffffff;
+  padding: 40px;
 
 }
-.formRow{
+
+.formRow {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 4px;
   text-transform: capitalize;
 }
-.row{
+
+.row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   width: 90%;
- 
-}
-
-/*Testimonials */
-
-.testimonials {
-  padding: 20px 81px;
-  width: 100%;
-}
-
-.testimonials .Row {
-  gap: 30px;
-  padding: 80px 0px;
-}
-
-.testimoni {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: calc((100% - 30px) / 2);
-
-
-}
-
-.testimoni-itmes {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-color: #FFFFFF;
-  box-shadow: 1px 5.6px 5.5px 1px rgba(0, 0, 0, 0.215);
-
-}
-
-.testimoni-start {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 50px;
-
-}
-
-.testimoni-start p {
-  font-size: 20px;
-  color: #4C4C4D;
-  text-transform: capitalize;
-}
-
-.horizontal-line {
-
-  border-top: 1px solid #F1F1F3;
-
-
-}
-
-.testimoni-end {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 50px;
-}
-
-.user-info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 15px;
-}
-
-.user-info h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333333;
-  text-transform: capitalize;
-}
-
-.testimoni-button {
-  background-color: #F1F1F3;
-  border-radius: 10px;
-  padding: 18px 24px;
-}
-
-.testimoni-button a {
-  color: #262626;
-  font-size: 18px;
-  font-weight: 500;
-
-}
-
-/*pricing */
-.pricing {
-  width: 100%;
-  padding: 20px 81px;
-
-}
-
-.pricing .Row {
-  gap: 30px;
-
-}
-
-.pricing .title-end {
-  padding: 24px 12px;
-  border-radius: 10px;
 
 }
 
 
-.title-end .monthly {
-  background-color: #FF9500;
-  padding: 12px 24px;
-  border-radius: 10px;
-  color: #ffffff;
-  transition: 0.7s;
-}
-
-.title-end .monthly:hover {
-  transition: 0.8s;
-  transform: scale(1.1);
-  box-shadow: 0.5px 9.64744px 8.2372px 0.5px #0000001a;
-}
-
-.title-end .yearly {
-  background-color: transparent;
-  padding: 12px 24px;
-  border-radius: 10px;
-  color: #4C4C4D;
-  transition: 0.7s;
-}
-
-.title-end .yearly:hover {
-  transition: 0.8s;
-  transform: scale(1.5);
-  box-shadow: 0.5px 9.64744px 8.2372px 0.5px #0000001a;
-}
-
-.pricing .pricingitems {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  padding: 50px 50px;
-  gap: 30px;
-  background-color: #FFFFFF;
-
-
-}
-
-.priceplan {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #F1F1F3;
-  padding: 24px 24px;
-  width: calc((100% - 30px) / 2);
-  border-radius: 20px;
-  box-shadow: 0.5px 9.64744px 8.2372px 0.5px #0000001a;
-
-}
-
-
-.paln-head {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 50px;
-  padding: 50px 0px;
-}
-
-.paln-head .plan-type {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px 22px;
-  border-radius: 10px;
-  background-color: #FFF9F0;
-  width: 100%;
-  text-transform: capitalize;
-  font-size: 18px;
-  color: #262626;
-}
-
-.plan-price {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
-}
-
-.plan-price h3 {
-  color: #262626;
-  font-size: 60px;
-  font-weight: 600px;
-
-
-}
-
-.plan-price span {
-  color: #4C4C4D;
-  font-size: 16px;
-  align-self: flex-end;
-}
-
-.paln-details {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 30px 30px;
-  border: 1px solid #F1F1F3;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  text-transform: capitalize;
-  background-color: #FFFFFF;
-
-}
-
-.paln-details h3 {
-  align-self: center;
-  font-size: 18px;
-  color: #262626;
-  font-weight: 400px;
-  padding-bottom: 24px;
-}
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  gap: 20px;
-
-
-
-}
-
-.features .feature {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 12px;
-  border: 1px solid #F1F1F3;
-  border-radius: 10px;
-  width: 100%;
-
-}
-
-.feature span {
-  font-size: 13px;
-  color: #4C4C4D;
-
-}
-
-.plan-button {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 18px 24px;
-  width: 100%;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: #FF9500;
-  transition: 0.8s;
-
-}
-
-.plan-button:hover {
-  transition: 0.8s;
-  transform: scale(1.002);
-  background-color: #ff8400;
-
-  box-shadow: 1px 9.64744px 8.2372px 1px #0000001a;
-}
-
-.plan-button a {
-  color: #FFFFFF;
-  font-size: 14px;
-}
-
-/* Media Queries */
-
-/*header */
-@media only screen and (max-width: 1031px) {
-  header {
-
-    padding: 15px 20px;
-  }
-
+@media only screen and (max-width: 320px) {
   .container {
-
-    width: 80%;
-  }
-
-  .LogNav-Row {
-
-    gap: 20px;
-  }
-
-  .LogNav-Row .Nav ul {
-
-    gap: 16px;
-    display: none;
-
-  }
-
-  .header-buttons {
-
-    gap: 20px;
-  }
-
-  .bar-menu {
-    transition: 0.7s;
-    display: block;
-  }
-
-
-}
-
-
-
-/*hero*/
-@media only screen and (max-width: 1075px) {
-  .hero {
     width: 100%;
-    padding: 0px 16px;
-
   }
 
-  .container {
-
-    width: 80%;
+  .space {
+    width: 30px;
   }
 
-  .hero-row {
-    padding: 30px;
+  .benefits-card h2 {
+    font-size: 40px;
   }
 
-  .hero-start svg {
-    width: 25px;
-    height: 25px;
-  }
-
-  .hero-dis img {
-    width: 40px;
-  }
-
-  .hero-dis h1 {
-    text-align: center;
+  .benefits-info h3 {
     font-size: 16px;
   }
 
-  .hero-H h2 {
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .hero-H p {
-    text-align: center;
-    font-size: 14px;
-  }
-
-
-  .hero-buttons .explore-button,
-  .hero-buttons .view-button {
-    padding: 14px 20px;
-    font-size: 14px;
-  }
-}
-
-/*media*/
-@media only screen and (max-width: 768px) {
-  .media {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .media-cards {
-    padding: 16px;
-  }
-
-  .media-card {
-    padding: 20px 30px;
-  }
-
-  .Vertical-line {
-    height: 45px;
-  }
-}
-
-/*mid*/
-@media only screen and (max-width: 500px) {
-  .mid-video {
-    width: 100%;
-    padding: 0px 32px;
-  }
-
-  .image img {
-    width: 100%;
-  }
-
-  .image svg {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-
-/*benefits*/
-@media only screen and (max-width: 970px) {
-  .benefits {
-    margin-top: 40px;
-    padding: 0px 16px;
-  }
-
-  .benefits .titel-row {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 30px;
-  }
-
-  .titel-row .title-end {
-    align-self: flex-start;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .titel-row .start-titel h2 {
-    font-size: 28px;
-  }
-
-  .titel-row .start-titel p {
-    font-size: 14px;
-  }
-
-  .titel-row .title-end a {
-    font-size: 14px;
-  }
-
-
-  .benefits-cards {
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 16px;
-    gap: 15px;
-  }
-
-
-  .benefits-cards .benefits-card {
-    padding: 30px 30px;
-    width: 50%;
-
-
-  }
-
-  .benefits-cards .benefits-card h2 {
-    font-size: 50px;
-  }
-
-  .benefits-cards .benefits-card h3 {
-    font-size: 20px;
-  }
-
-  .benefits-cards .benefits-card p {
-    font-size: 14px;
-  }
-
-  .benefits-cards .benefits-card .pointer a svg {
-    width: 26px;
-    height: 26px;
-
-  }
-
-}
-
-@media only screen and (max-width: 500px) {
-  .benefits {
-    margin-top: 40px;
-    padding: 0px 16px;
-  }
-
-  .benefits .titel-row {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 30px;
-  }
-
-  .titel-row .title-end {
-    align-self: flex-start;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .titel-row .start-titel h2 {
-    font-size: 28px;
-  }
-
-  .titel-row .start-titel p {
-    font-size: 14px;
-  }
-
-  .titel-row .title-end a {
-    font-size: 14px;
-  }
-
-
-  .benefits-cards {
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 16px;
-
-    gap: 15px;
-  }
-
-
-  .benefits-cards .benefits-card {
-    padding: 30px 30px;
-    width: 100%;
-
-
-  }
-
-  .benefits-cards .benefits-card h2 {
-    font-size: 50px;
-  }
-
-  .benefits-cards .benefits-card h3 {
-    font-size: 20px;
-  }
-
-  .benefits-cards .benefits-card p {
-    font-size: 14px;
-  }
-
-  .benefits-cards .benefits-card .pointer a svg {
-    width: 26px;
-    height: 26px;
-
-  }
-
-}
-
-/*course*/
-@media only screen and (max-width: 1024px) {
-  .course {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-  }
-
-  .titel-row {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 30px;
-  }
-
-  .titel-row .title-end {
-    align-self: flex-start;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .titel-row .start-titel h2 {
-    font-size: 28px;
-  }
-
-  .titel-row .start-titel p {
-    font-size: 14px;
-  }
-
-  .titel-row .title-end a {
-    font-size: 14px;
-  }
-
-  .Courses .corse-card .Row {
-    align-items: flex-start;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .Courses {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    padding: 60px 0;
-  }
-
-  .Courses .Row {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .course {
-    width: 100%;
-  }
-}
-
-/*testimoni*/
-@media only screen and (max-width: 1360px) {
-  .testimoni {
-    width: 100%;
-  }
-
-  .testimoni .testimoni-itmes .testimoni-start p {
-    font-size: 14px;
-  }
-
-  .testimoni .testimoni-itmes .testimoni-end .user-info h3 {
-    font-size: 16px;
-  }
-
-  .testimoni .testimoni-itmes .testimoni-end .testimoni-button a {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .testimonials {
-
-    padding: 60px 0;
-  }
-
-  .testimonials .container .Row {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .testimoni {
-    width: 100%;
-  }
-
-}
-
-/*pricing*/
-@media only screen and (max-width: 1250px) {
-  .priceplan {
-    width: 100%;
-  }
-
-}
-
-@media only screen and (max-width: 500px) {
-  .pricing {
-    padding: 60px 0;
-    transition: 0.6s;
-  }
-
-  .pricing .Row {
-
-    flex-direction: column;
-
-    gap: 15px;
-  }
-
-  .pricing .pricing-items {
-
-    align-items: center;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.6s;
-
-  }
-
-  .priceplan {
-    width: 100%;
-  }
-
-  .paln-head {
-    width: 100%;
-  }
-
-  .paln-head .plan-type {
-    font-size: 14px;
-  }
-
-  h3 {
-    font-size: 50px;
-  }
-
-  .plan-price span {
-    font-size: 14px;
-  }
-
-  .paln-details .features .feature {
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  .paln-details .features .feature svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .paln-details .features .feature span {
+  .benefits-info p {
     font-size: 12px;
   }
 
-  body.activemodal {
-    overflow-y: hidden;
+  .Courses {
+    padding: 20px;
   }
 
-  .btnmodal {
-    padding: 10px 20px;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
+  .corseitem {
+    padding: 40px 0;
   }
 
-  .modal,
-  .overlay {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
+  .course {
+    width: 100%;
+    padding: 30px;
   }
 
-  .overlay {
-    background: rgba(49, 49, 49, 0.8);
+  .carddescription h3 {
+    font-size: 20px;
   }
 
-  .modalcontent {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 1.4;
-    background: #f1f1f1;
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+  .carddescription p {
+    font-size: 14px;
   }
 
-  .closemodal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
+  .cardbutt {
+    padding: 12px 16px;
   }
 
-  .formRow {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 4px;
-    text-transform: capitalize;
+  .cardbutt span {
+    font-size: 14px;
   }
 
+  .center {
+    margin-top: 50px;
+    padding-top: 20px;
+  }
 
+  .productCard {
+    padding-top: 20px;
+  }
+
+  .Product {
+    padding: 20px;
+  }
+
+  .productStart {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .Productdetails {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .Comment {
+    gap: 2px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .cartbutt {
+    padding: 8px 8px;
+  }
+
+  .cartbutt a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 2px;
+  }
 }

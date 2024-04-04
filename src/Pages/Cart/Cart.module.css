@@ -221,3 +221,58 @@ animation-delay: 15ms;
     width: 90%;
    
  }
+ /* For screens with a minimum width of 320px */
+@media only screen and (min-width: 320px) {
+    .Cartproducts {
+      padding: 30px 10px;
+      justify-content: center;
+    }
+  
+    .ProductsDetial {
+      width: calc(50% - 20px);
+      padding: 10px;
+    }
+  
+    .productsInDeQU {
+      padding: 20px;
+    }
+  
+    .ClearCartBtn {
+      width: 100%;
+      padding: 20px 5px;
+    }
+  
+    .Financial {
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .total {
+      width: 100%;
+    }
+  
+    .orderbutn {
+      width: 100%;
+      padding: 10px;
+      border: 1px dashed rgb(0, 0, 0);
+      text-align: center;
+    }
+  
+    .Form {
+      padding: 20px 20px;
+    }
+  
+    .midForm {
+      width: 80%;
+      padding: 20px;
+    }
+  
+    .formRow {
+      gap: 10px;
+    }
+  
+    .row {
+      width: 100%;
+    }
+  }
+  

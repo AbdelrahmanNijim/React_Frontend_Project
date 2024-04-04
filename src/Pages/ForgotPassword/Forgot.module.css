@@ -1,0 +1,74 @@
+
+.Form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+    padding: 40px 40px;
+
+  }
+ 
+
+ .midForm{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ gap: 30px;
+ width:40%;
+ justify-content: center;
+ align-self: flex-end;
+ box-shadow: 3px 2px 5px 3px rgba(14, 111, 221, 0.415);
+ background-color: #ffffff;
+ padding: 40px ;
+
+ }
+ .formRow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4px;
+    text-transform: capitalize;
+ }
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+   
+ }
+
+ @media only screen and (max-width: 768px) {
+   .Form {
+     padding: 20px;
+   }
+   
+   .midForm {
+     width: 80%;
+   }
+ }
+ 
+ /* For screens with a maximum width of 480px */
+ @media only screen and (max-width: 480px) {
+   .Form {
+     padding: 10px;
+   }
+   
+   .midForm {
+     width: 100%;
+   }
+ }
+ 
+ /* For screens with a maximum width of 320px */
+ @media only screen and (max-width: 320px) {
+   .Form {
+     padding: 5px;
+   }
+   
+   .midForm {
+     width: 100%;
+   }
+ }

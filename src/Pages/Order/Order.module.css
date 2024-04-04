@@ -89,3 +89,28 @@
 
 
 }
+@media only screen and (max-width: 320px) {
+  .OrdersDetails {
+    padding: 10px; /* Adjust padding */
+    gap: 5px; /* Adjust gap */
+  }
+
+  .DetailsStart {
+    padding: 15px 10px; /* Adjust padding */
+    width: 100%; /* Set width to full for smaller screens */
+  }
+
+  .DetailsStart img {
+    width: 30%; /* Adjust image width */
+  }
+
+  .Cancel {
+    padding: 4px 4px; /* Adjust padding */
+    top: 2%; /* Adjust top position */
+    right: 1%; /* Adjust right position */
+  }
+
+  .Cancel a {
+    font-size: 14px; /* Adjust font size */
+  }
+}
