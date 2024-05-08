@@ -47,18 +47,19 @@ function Products() {
             </div>
           ) : (
             products.map((product) => (
-                   
-
+              
+           
               <div className={styles.course} key={product._id}>
-                
+             
+                   
                 <div className={styles.corsecard}>
-                     
+               
                   <img src={product.mainImage.secure_url} />
-
+         
                   <div className={styles.carddescription}>
-
+                  <Link to={`/products/${product._id}`} >    
                     <h3>{product.name}</h3>
-
+                    </Link>
                   </div>
                   <div className={styles.carddetails}>
                     <span> Price:${product.price}</span>
@@ -66,19 +67,19 @@ function Products() {
                   </div>
 
                   <div className={styles.cardbutt}>
-                    <Link to={`/products/${product._id}`} >
+                  <Link to={`/products/${product._id}`} >
                       <span>More Details</span>
-                    </Link>
+                      </Link>
 
                   </div>
 
                 </div>
+               
+         
+             
 
 
               </div>
-
-
-
 
 
 
@@ -91,6 +92,7 @@ function Products() {
          )}
  
           </div>
+      
         </div>
       </div>
     </>

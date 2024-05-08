@@ -460,7 +460,7 @@
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 880px) {
   .container {
     width: 100%;
   }
@@ -483,6 +483,9 @@
 
   .Courses {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .corseitem {
